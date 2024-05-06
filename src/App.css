@@ -1,0 +1,181 @@
+/* Classes */
+
+.badge {
+  border: 0.1px solid rgb(181, 178, 178);
+  border-radius: 5px;
+  padding: 0.2rem;
+  margin: 0.5rem;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 50px 1fr;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 3rem;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  z-index: 0;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.column-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+}
+
+.header-left-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: 500;
+}
+
+.header-right-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: 500;
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 0 0.7px 0.7px #d7d4d4;
+  overflow: hidden;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  transition: transform 0.1s;
+  cursor: pointer;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-body-light);
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.card-title {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-tag {
+  display: flex;
+  color: var(--color-body-light);
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+.tag-item {
+  display: flex;
+  padding: 0.2rem 0.5rem 0 0.1rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Filter */
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  outline: none;
+  width: 11rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  height: 10rem;
+  width: 25rem;
+  box-shadow: 0 0 20px #d7d4d4;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  z-index: 1;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.selectbox {
+  padding: 0.3rem 1rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0.7px 0.7px #d7d4d4;
+  border-radius: 3px;
+}
+
+/*
+Media Queries
+*/
+
+@media screen and (min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Utility Classes */
+
+.p-1 {
+  padding: 1px;
+}
+
+.p-2 {
+  padding: 2px;
+}
+
+.m-1 {
+  margin: 1px;
+}
+
+.m-2 {
+  margin: 2px;
+}
+
+.mt-2 {
+  margin-top: 2px;
+}
+
+.mr-2 {
+  margin-right: 2px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}

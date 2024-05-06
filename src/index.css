@@ -1,0 +1,27 @@
+/* Typography */
+
+::selection {
+  background-color: var(--color-selection);
+  color: #fff;
+}
+
+:root {
+  --color-headings: #22202a;
+  --color-body: #2b2d2c;
+  --color-body-light: #716b89;
+  --border-color: #ccc;
+  --border-radius: 30px;
+  --color-selection: #66b0ff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--color-body);
+  height: 100vh;
+}

@@ -64,7 +64,6 @@ function App() {
             }),
         });
       }
-      console.log(renderData);
     } else if (groupBy === "users") {
       for (let item of users) {
         renderData.push({
